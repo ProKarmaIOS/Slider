@@ -16,6 +16,14 @@
     if (self) {
         _covers = covers;
         
+        self.showsVerticalScrollIndicator=NO;
+        self.showsHorizontalScrollIndicator=NO;
+        self.bounces = NO;
+        self.decelerationRate=UIScrollViewDecelerationRateFast;
+        self.delegate=self;
+        self.scrollsToTop=NO;
+        self.bouncesZoom=NO;
+        
         
     }
     return self;
