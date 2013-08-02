@@ -2,7 +2,7 @@
 //  main.m
 //  Slider
 //
-//  Created by abhishek on 7/31/13.
+//  Created by abhishek on 8/1/13.
 //  Copyright (c) 2013 kaiser. All rights reserved.
 //
 

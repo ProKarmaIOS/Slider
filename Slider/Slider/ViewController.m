@@ -2,7 +2,7 @@
 //  ViewController.m
 //  Slider
 //
-//  Created by abhishek on 7/31/13.
+//  Created by abhishek on 8/1/13.
 //  Copyright (c) 2013 kaiser. All rights reserved.
 //
 
@@ -17,7 +17,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    NSMutableArray *list=[[NSMutableArray alloc] init];
+    
+    for (int i = 0; i < 12; i++) {
+        [list addObject:[NSString stringWithFormat:@"Test %d", i]];
+    }
+    
+	CustomScrollView *s = [[CustomScrollView alloc] initWithFrame:CGRectMake(0,
+                                                                             0,
+                                                                             self.view.frame.size.width,
+                                                                             self.view.frame.size.height/3
+                                                                             )
+                                                       AndOptions:list];
+    
+    
+    
+    
+    [self.view setBackgroundColor:[UIColor lightGrayColor]];
+    [self.view addSubview:s];
 }
 
 - (void)didReceiveMemoryWarning
