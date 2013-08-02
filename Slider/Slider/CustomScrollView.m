@@ -66,9 +66,8 @@
         
         for (int i = 0; i < [list count]; ++i) {
             UIImageView *cardImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"BgImg.png"]];
-            
             cardImageView.frame = CGRectMake(10, currentFrameY, frame.size.width - 20, kCardHeightPixels);
-            
+            [cardImageView setUserInteractionEnabled:YES];
             if (i < _selectedCard) {
                 currentFrameY += kSpacingPixelsTopClosed;
             } else if (i >= _selectedCard) {

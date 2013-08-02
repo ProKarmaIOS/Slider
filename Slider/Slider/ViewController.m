@@ -17,9 +17,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSMutableArray *list=[[NSMutableArray alloc] init];
+    NSMutableArray *list =[ [NSMutableArray alloc] init];
     
-    for (int i = 0; i < 12; i++) {
+    for (int i = 0; i < 5; i++) {
         [list addObject:[NSString stringWithFormat:@"Test %d", i]];
     }
     
