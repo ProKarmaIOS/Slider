@@ -9,20 +9,25 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
+#define kDistanceFromTopOfFrameToTopCard 10
+#define kDistanceFromSideOfFrameToSideOfCard 10
+#define kAnimationDurationForSlide 0.6f
+
 @interface CustomScrollView : UIScrollView <UIScrollViewDelegate>
 {
     float currentFrameY;
+    
+    // constants calculated at runtime
     float kSpacingPixelsTopClosed;
     float kSpacingPixelsClosed;
     float kSpacingPixelsOpen;
     float kCardHeightPixels;
 }
-@property (nonatomic, strong) CAScrollLayer *animatedScrollLayer;
+
 @property (nonatomic, strong) NSMutableArray *list;
 @property (nonatomic, assign) int selectedCard;
 
 
--(id)initWithFrame:(struct CGRect)frame AndOptions:(NSMutableArray*)list;
--(void)layoutLayer:(CAScrollLayer*)layer;
-
+-(id)initWithFrame:(struct CGRect)frame AndList:(NSMutableArray*)list;
+-(void)initCardsWithList:(NSMutableArray *)list;
 @end

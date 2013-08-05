@@ -19,22 +19,29 @@
     [super viewDidLoad];
     NSMutableArray *list =[ [NSMutableArray alloc] init];
     
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 12; i++) {
         [list addObject:[NSString stringWithFormat:@"Test %d", i]];
     }
     
-	CustomScrollView *s = [[CustomScrollView alloc] initWithFrame:CGRectMake(0,
-                                                                             0,
+	/*CustomScrollView *s = [[CustomScrollView alloc] initWithFrame:CGRectMake(0,
+                                                                             548.0/3.0,
                                                                              self.view.frame.size.width,
                                                                              self.view.frame.size.height/3
                                                                              )
                                                        AndOptions:list];
     
-    
+    NSLog(@"%f", self.view.frame.size.height);
     
     
     [self.view setBackgroundColor:[UIColor lightGrayColor]];
-    [self.view addSubview:s];
+    [self.view addSubview:s];*/
+    
+//    UIView *view  = [[[NSBundle mainBundle] loadNibNamed:@"ViewController_iPhone"
+//                                                   owner:self
+//                                                 options:nil]lastObject];
+   
+    //CustomScrollView *s = [[view subviews]lastObject];
+    [_s initCardsWithList:list];
 }
 
 - (void)didReceiveMemoryWarning
