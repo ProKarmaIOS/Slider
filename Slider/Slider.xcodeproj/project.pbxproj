@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F237C7517A99DD800BC2CCB /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F237C7417A99DD800BC2CCB /* Storyboard.storyboard */; };
+		1F237C7717A9A09F00BC2CCB /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F237C7617A9A09F00BC2CCB /* 3.png */; };
 		411C499817A989CC0068955F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411C499717A989CC0068955F /* UIKit.framework */; };
 		411C499A17A989CC0068955F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411C499917A989CC0068955F /* Foundation.framework */; };
 		411C499C17A989CC0068955F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411C499B17A989CC0068955F /* CoreGraphics.framework */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F237C7417A99DD800BC2CCB /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		1F237C7617A9A09F00BC2CCB /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		411C499317A989CC0068955F /* Slider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		411C499717A989CC0068955F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		411C499917A989CC0068955F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -113,6 +117,7 @@
 		411C49C117A98AD20068955F /* App Delegate */ = {
 			isa = PBXGroup;
 			children = (
+				1F237C7617A9A09F00BC2CCB /* 3.png */,
 				411C49A617A989CC0068955F /* AppDelegate.h */,
 				411C49A717A989CC0068955F /* AppDelegate.m */,
 			);
@@ -124,6 +129,7 @@
 			children = (
 				411C49AF17A989CC0068955F /* ViewController.h */,
 				411C49B017A989CC0068955F /* ViewController.m */,
+				1F237C7417A99DD800BC2CCB /* Storyboard.storyboard */,
 			);
 			name = "Main View Controller";
 			sourceTree = "<group>";
@@ -192,6 +198,8 @@
 				411C49AA17A989CC0068955F /* Default.png in Resources */,
 				411C49AC17A989CC0068955F /* Default@2x.png in Resources */,
 				411C49AE17A989CC0068955F /* Default-568h@2x.png in Resources */,
+				1F237C7517A99DD800BC2CCB /* Storyboard.storyboard in Resources */,
+				1F237C7717A9A09F00BC2CCB /* 3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +321,7 @@
 				411C49B917A989CC0068955F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

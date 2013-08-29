@@ -12,7 +12,8 @@
 @interface Scroller : UIScrollView <UIScrollViewDelegate>
 
 @property NSMutableArray *covers;
-
+@property (nonatomic,strong) CAScrollLayer   * cfIntLayer;
+@property (nonatomic,getter = getSelectedCover) int selectedCover;
 -(id)initWithFrame:(struct CGRect)frame covers:(NSMutableArray*)covers;
 -(void)layoutLayer:(CAScrollLayer*)layer;
 

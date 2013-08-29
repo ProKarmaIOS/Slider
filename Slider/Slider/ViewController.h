@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Scroller.h"
+
 
 @interface ViewController : UIViewController
-
+@property (nonatomic,strong) Scroller *scroller;
+@property (nonatomic,strong) NSMutableArray *covers;
 @end
