@@ -51,7 +51,6 @@
     self.delegate = self;
     self.scrollsToTop = NO;
     self.bouncesZoom = NO;
-    self.bounces = NO;
     self.layer.shouldRasterize = YES;
     self.opaque = YES;
     self.autoresizesSubviews = YES;
