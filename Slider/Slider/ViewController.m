@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController ()
+
 
 @end
 
@@ -17,6 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+<<<<<<< HEAD
     NSMutableArray *list =[ [NSMutableArray alloc] init];
     
     for (int i = 0; i < 12; i++) {
@@ -42,6 +45,24 @@
    
     //CustomScrollView *s = [[view subviews]lastObject];
     [_s initCardsWithList:list];
+=======
+	// Do any additional setup after loading the view, typically from a nib.
+    
+    
+    self.covers = [NSMutableArray array];
+    
+    for (int i=1; i<=6; i++) {
+        NSLog(@"Loading demoo image %d \n",i);
+      
+        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"3.png"]];
+        
+        [self.covers addObject:image];
+    }
+    
+    self.scroller = [[Scroller alloc] initWithFrame:self.view.frame covers:self.covers];
+    self.view = self.scroller;
+  
+>>>>>>> D
 }
 
 - (void)didReceiveMemoryWarning
